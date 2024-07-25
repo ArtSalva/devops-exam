@@ -1,0 +1,27 @@
+commands:
+$ docker build -t hello-world-webapp .
+
+$ docker run -p 8080:8080 hello-world-webapp
+
+curl result:
+$ curl -v http://127.0.0.1:8080/
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 127.0.0.1:8080...
+* Connected to 127.0.0.1 (127.0.0.1) port 8080 (#0)
+> GET / HTTP/1.1
+> Host: 127.0.0.1:8080
+> User-Agent: curl/7.87.0
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Server: Werkzeug/3.0.3 Python/3.11.0
+< Date: Wed, 24 Jul 2024 14:08:18 GMT
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 11
+< Connection: close
+<
+{ [11 bytes data]
+100    11  100    11    0     0   1835      0 --:--:-- --:--:-- --:--:--  2200Hello World
+* Closing connection 0

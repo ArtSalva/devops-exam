@@ -1,0 +1,6 @@
+Part 2:
+
+1. Updated the app.py from World to Universe using VsCode. 
+2. Created a docker-compose.yml
+3. Execute command -
+$ docker-compose up --build
